@@ -1,0 +1,205 @@
+{
+	"info": {
+		"_postman_id": "12aed3d6-01cf-43ae-8f58-1eafe69f980d",
+		"name": "task",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://localhost:3000/teacher",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "files",
+							"type": "file",
+							"src": "/C:/Users/soham/Downloads/Node.JS Stack Task.pdf"
+						},
+						{
+							"key": "usernames[1]",
+							"value": "7738877919",
+							"type": "default",
+							"disabled": true
+						},
+						{
+							"key": "usernames[0]",
+							"value": "9819035520",
+							"type": "default"
+						},
+						{
+							"key": "files",
+							"type": "file",
+							"src": "/C:/Users/soham/Downloads/Soham's Resume (12).pdf"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3000/teacher",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"teacher"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/assigment",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "x-access-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiOTgxOTAzNTUyMCIsImlhdCI6MTY1Njg0NTI0NiwiZXhwIjoxNjU2ODQ4ODQ2fQ.tUPhSLSePi7IXQMOBeXP0y2XgSLFFg_FjZ7m7pu59WI",
+						"type": "default"
+					},
+					{
+						"key": "",
+						"value": "",
+						"type": "default",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiOTgxOTAzNTUyMCIsImlhdCI6MTY1Njc3NjAyOCwiZXhwIjoxNjU2Nzc2MDg4fQ.ZCFPa9EtDOGihtfg1nXx3eFeXoGdbCrL77lZ3LczfzE",
+							"type": "default",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3000/assigment",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"assigment"
+					],
+					"query": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiOTgxOTAzNTUyMCIsImlhdCI6MTY1Njc3NTY1MywiZXhwIjoxNjU2Nzc1NzEzfQ.x_mvCS_XqykyyWcN3vGK6iCCIwfzP7SAcvCr5MvJ6kI",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/login/",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "username",
+							"value": "9819035520",
+							"type": "default"
+						},
+						{
+							"key": "password",
+							"value": "mypassword",
+							"type": "default"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3000/login/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"login",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/register",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "first_name",
+							"value": "soham",
+							"type": "default"
+						},
+						{
+							"key": "last_name",
+							"value": "shinde",
+							"type": "default"
+						},
+						{
+							"key": "school_name",
+							"value": "St. John High School",
+							"type": "default"
+						},
+						{
+							"key": "email",
+							"value": "sohamshinde04@gmail.com",
+							"type": "default"
+						},
+						{
+							"key": "mobile",
+							"value": "9819035520",
+							"type": "default"
+						},
+						{
+							"key": "password",
+							"value": "mypassword",
+							"type": "default"
+						},
+						{
+							"key": "photo",
+							"type": "file",
+							"src": "/C:/Users/soham/Downloads/Untitled.png"
+						}
+					],
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/register",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"register"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
