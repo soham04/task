@@ -1,9 +1,9 @@
 const express = require('express');
 const router = express.Router();
-const { Assignment } = require('../models/Assignment')
+const { Assignment } = require('../../models/Assignment')
 const formidable = require('formidable');
-const { Student } = require('../models/Student');
-const myGoogleAPI = require("../google-api/api-upper-layer")
+const { Student } = require('../../models/Student');
+const myGoogleAPI = require("../../google-api/api-upper-layer")
 
 router.post('/', async (req, res) => {
 
